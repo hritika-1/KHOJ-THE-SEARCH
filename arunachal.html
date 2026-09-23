@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whispers of the East - The Unsung Songs of Arunachal Pradesh</title>
+  <meta name="description"
+    content="Discover the hidden heritage, cultures, monuments, arts, festivals, crafts and cuisine of Arunachal Pradesh">
+  <link rel="stylesheet" href="arunachal.css">
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home"><span>✦</span> WHISPERS OF THE EAST</a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#discover">Discover</a>
+        <a href="#about">Our Story</a>
+        <a href="#categories">Categories</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">PRESERVE • EXPLORE • CONNECT</p>
+      <h1>Find the whispers<br><em>of the East.</em></h1>
+      <p class="hero-text">A digital journey through the unique cultures, hidden heritage, living traditions, crafts and
+        flavours of Arunachal Pradesh.</p>
+      <a class="cta" href="#discover">Start exploring <span>↓</span></a>
+    </div>
+    <div class="hero-pattern"></div>
+  </header>
+
+  <main>
+    <section class="intro section" id="about">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>The<br><em>obvious.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>Arunachal Pradesh is a state in northeast India.The capital of Arunachal Pradesh is Itanagar.Arunachal Pradesh is famous as the 
+          "Land of the Dawn-Lit Mountains" for its breathtaking Himalayan landscapes, rich indigenous tribal culture, and spiritual Buddhist landmarks.
+          Its international borders include Bhutan, China and Myanmar whereas its domestic borders
+          include Assam and Nagaland.</p>
+        <p>It is the fourteenth largest state in India by area. English is the official language
+          of this state. Its indigenour languages also include Nyishi, Adi, Apatani, Tagin, Galo, Khamti and many more.</p>
+      </div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <p class="eyebrow">SIX LENSES</p>
+      <h2>See Arunachal Pradesh<br><em>from every angle.</em></h2>
+      <div class="category-grid">
+        <button class="cat-card" data-cat="culture"><span>01</span><b>Regional<br>Cultures</b><small>Communities &
+            identity</small></button>
+        <button class="cat-card" data-cat="monuments"><span>02</span><b>Historic<br>Monuments</b><small>Stone, stories &
+            time</small></button>
+        <button class="cat-card" data-cat="arts"><span>03</span><b>Folklore &<br>Art</b><small>Living creative
+            traditions</small></button>
+        <button class="cat-card" data-cat="festivals"><span>04</span><b>Festivals</b><small>Celebration &
+            community</small></button>
+        <button class="cat-card" data-cat="crafts"><span>05</span><b>Handicrafts &<br>Textiles</b><small>Made by
+            hand</small></button>
+        <button class="cat-card" data-cat="food"><span>06</span><b>Traditional<br>Cuisine</b><small>Flavours of the
+            Deccan</small></button>
+      </div>
+    </section>
+  </main>
+
+
+    <section class="discover section" id="discover">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE ARUNACHAL PRADESH</p>
+          <h2>24 stories.<br><em>One living heritage.</em></h2>
+        </div>
+        <p class="section-note">Browse the collection or search for a story that catches your eye.</p>
+      </div>
+
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search stories..." 
+        aria-label="Search stories">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="culture">Regional Cultures</option>
+          <option value="monuments">Historic Monuments & Temples</option>
+          <option value="arts">Folklore, Art & Literature</option>
+          <option value="festivals">Festivals</option>
+          <option value="crafts">Handicrafts & Textiles</option>
+          <option value="food">Traditional Cuisine</option>
+        </select>
+      </div>
+
+      <div class="collection" id="collection"></div>
+    </section>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card">
+      <button class="close" data-close aria-label="Close">×</button>
+      <div class="modal-number" id="modalNumber"></div>
+      <p class="eyebrow" id="modalCategory"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-accent"></div>
+    </article>
+  </div>
+  <script src="arunachal.js"></script>
+</body>
+<footer>
+    <div class="footer-brand"><span>✦</span> WHISPERS OF THE EAST</div>
+    <p>Preserving the Past and Connecting it to the Future.</p>
+    <div class="footer-bottom"><span>PRESERVE• EXPLORE • CONNECT</span></div>
+  </footer>
+</html>

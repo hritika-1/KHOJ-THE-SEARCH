@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHOJ - THE SEARCH</title>
+  <meta name="description"
+    content="Discover the hidden heritage, cultures, monuments, arts, festivals, crafts and cuisine of Telangana.">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home"><span>✦</span> KHOJ - THE SEARCH</a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#discover">Discover</a>
+        <a href="#about">Our Story</a>
+        <a href="#categories">Categories</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">PRESERVE • EXPLORE • CONNECT</p>
+      <h1>Find the soul<br><em>of India.</em></h1>
+      <p class="hero-text">A digital journey through the unique cultures, hidden heritage, living traditions, crafts and
+        flavours of India.</p>
+      <a class="cta" href="#discover">Start exploring <span>↓</span></a>
+    </div>
+    <div class="hero-pattern"></div>
+  </header>
+
+  <main>
+    <section class="intro section" id="about">
+      <div>
+        <p class="eyebrow">THE IDEA</p>
+        <h2>Beyond the<br><em>obvious.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>India's richest stories are not always found on the usual tourist map but are hidden in old streets,
+          forests, villages, festivals, kitchens and oral traditions.</p>
+        <p><strong>KHOJ - THE SEARCH</strong> brings these stories together in one place — making heritage easier to
+          discover for visitors, researchers and the younger generation. Explore the unknown and live the stories.</p>
+      </div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <p class="eyebrow">SIX LENSES</p>
+      <h2>See India<br><em>from every angle.</em></h2>
+      <div class="category-grid">
+        <button class="cat-card" data-cat="telangana"><span>01</span><b>Tealngana</b><small>A state from the Southern
+          part fo India.</small></button>
+        <button class="cat-card" data-cat="arunachal"><span>02</span><b>Arunachal Pradesh</b><small>A state from the 
+          North Eastern part of India.</small></button>
+        <button class="cat-card" data-cat="chhattisgarh"><span>03</span><b>Chhattisgarh</b><small>A state from the Central
+          part of India.</small></button>
+        <button class="cat-card" data-cat="daman"><span>04</span><b>Daman and Diu</b><small>A union territory on the
+          west coast of India.</small></button>
+      </div>
+    </section>
+  </main>
+
+
+    <section class="discover section" id="discover">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE INDIA</p>
+          <h2>Millions of stories.<br><em>One living heritage.</em></h2>
+        </div>
+        <p class="section-note">Browse the collection or search for a state that catches your eye.</p>
+      </div>
+
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search stories..." 
+        aria-label="Search stories">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="telangana">Telangana</option>
+          <option value="arunachal">Arunachal Pradesh</option>
+          <option value="chhattisgarh">Chhattisgarh</option>
+          <option value="daman">Daman and Diu</option>
+        </select>
+      </div>
+
+      <div class="collection" id="collection"></div>
+    </section>
+    <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card">
+      <button class="close" data-close aria-label="Close">×</button>
+      <div class="modal-number" id="modalNumber"></div>
+      <p class="eyebrow" id="modalCategory"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-accent"></div>
+    </article>
+  </div>
+  <script src="index.js"></script>
+</body>
+<footer>
+    <div class="footer-brand"><span>✦</span> KHOJ - THE SEARCH</div>
+    <p>Preserving the Past and Connecting it to the Future.</p>
+    <div class="footer-bottom"><span>PRESERVE• EXPLORE • CONNECT</span></div>
+  </footer>
+</html>
